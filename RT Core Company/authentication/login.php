@@ -10,7 +10,7 @@
       <div>
          <a href="/index.php">
             <img src="/images/homepage.png" id="home">
-         </a>
+         </ a>
       </div>
       <div class="panel">
          <h2>ZALOGUJ SIĘ </h2><br>
