@@ -1,2 +1,2 @@
 # PHP_Project
-Projekt na zaliczenie przedmiotu "Interaktywne serwisy internetowe"
+Projekt na zaliczenie przedmiotu "Interaktywne serwisy internetowe".
