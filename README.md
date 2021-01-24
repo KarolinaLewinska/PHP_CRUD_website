@@ -38,11 +38,12 @@ pozostałe widoki zostały spersonalizowane przy użyciu biblioteki **Bootstrap*
 <br />![loginView](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/loginView.PNG)<br />
 <br />- **register.php** – panel rejestracji<br />
 <br />![registerView](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/registerView.PNG)<br />
-      <br />- widok panelu z **walidacją**<br />
+      <br />- widok panelu rejestracji z **walidacją**<br />
 <br />![registerValid](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/registerValidation.PNG)<br />
 <br />- **logout.php** – wylogowanie z systemu - przekierowanie na stronę główną (index.php) oraz zniszczenie danych sesyjnych<br />
 <br />- **welcome.php** – widok ukazujący się po pomyślnym zarejestrowaniu użytkownika<br />
 <br />![regSuccess](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/regSuccessView.PNG)<br />
-
+Do wszystkich pól formularzy dodawania, edycji i usuwania danych pracowników została zastosowana walidacja client-side:<br />
+<br />![valid](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/clientSideValidation.PNG)<br />
 
 
