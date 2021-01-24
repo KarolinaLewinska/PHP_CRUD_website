@@ -32,8 +32,8 @@ Język: **PHP**<br />
 <br />- **css/authentication.css** – stworzenie arkusza stylów CSS dla **login.php** oraz **register.php**<br />
 pozostałe widoki zostały spersonalizowane przy użyciu biblioteki **Bootstrap**<br />
 <br />- **authentication/login_script.php** – skrypt, który umożliwia zalogowanie się do systemu<br />
-        Gdy dane zostaną podane niepoprawne dane do logowania to wyświetlany jest JavaScript'owy alert.<br />
-        ![loginAlert](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/LoginCom.PNG)<br />
+         Gdy dane zostaną podane niepoprawne dane do logowania to wyświetlany jest JavaScript'owy alert.<br />
+        <br />![loginAlert](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/LoginCom.PNG)<br />
 <br />- **login.php** – panel logowania<br />
 
 <br />- **register.php** – panel rejestracji<br />
