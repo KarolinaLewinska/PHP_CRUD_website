@@ -7,7 +7,7 @@ Język: **PHP**<br />
 **Struktura projektu:**<br />
 - **index.php** – strona główna (przed zalogowaniem, i po wylogowaniu)<br />
 <br />![indexView](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/indexPageView.PNG)<br />
-- **employees.php** – lista danych pracowników (widoczna po zalogowaniu się do systemu)<br />
+<br />- **employees.php** – lista danych pracowników (widoczna po zalogowaniu się do systemu)<br />
 <br />![employeesView](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/listView.PNG)<br />
 - **add.php** – formularz pozwalający na dodawanie danych pracownika<br />
 <br />![addView](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/createView.PNG)<br />
