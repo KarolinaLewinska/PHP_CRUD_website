@@ -35,10 +35,13 @@ pozostałe widoki zostały spersonalizowane przy użyciu biblioteki **Bootstrap*
          Gdy dane zostaną podane niepoprawne dane do logowania to wyświetlany jest JavaScript'owy alert.<br />
         <br />![loginAlert](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/LoginCom.PNG)<br />
 <br />- **login.php** – panel logowania<br />
-
+<br />![loginView](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/loginView.PNG)<br />
 <br />- **register.php** – panel rejestracji<br />
+<br />![registerView](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/registerView.PNG)<br />
+<br />![registerValid](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/registerValidation.PNG)<br />
 <br />- **logout.php** – wylogowanie z systemu - przekierowanie na stronę główną (index.php) oraz zniszczenie danych sesyjnych<br />
 <br />- **welcome.php** – widok ukazujący się po pomyślnym zarejestrowaniu użytkownika<br />
+<br />![regSuccess](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/regSuccessView.PNG)<br />
 
 
 
