@@ -38,7 +38,7 @@ pozostałe widoki zostały spersonalizowane przy użyciu biblioteki **Bootstrap*
 <br />![loginView](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/loginView.PNG)<br />
 <br />- **register.php** – panel rejestracji<br />
 <br />![registerView](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/registerView.PNG)<br />
-      - widok panelu z walidacją
+      <br />- widok panelu z **walidacją**<br />
 <br />![registerValid](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/registerValidation.PNG)<br />
 <br />- **logout.php** – wylogowanie z systemu - przekierowanie na stronę główną (index.php) oraz zniszczenie danych sesyjnych<br />
 <br />- **welcome.php** – widok ukazujący się po pomyślnym zarejestrowaniu użytkownika<br />
