@@ -29,7 +29,7 @@ Język: **PHP**<br />
   Po pomyślnej edycji danych wyświetlany jest JavaScript’owy alert<br />
   <br />![editAlert](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/editingCom.PNG)<br />
 <br />- **showEmployees.php** – zapytanie SQL wyświetlające wszystkie rekordy z bazy na stronie **employees.php**<br />
-<br />- **css/authentication.css** – stworzenie arkusza stylów CSS dla **login.php** oraz **register.php**<br />
+<br />- **css/authentication.css** – stworzenie arkusza stylów CSS dla **login.php** oraz **register.php**,<br />
 pozostałe widoki zostały spersonalizowane przy użyciu biblioteki **Bootstrap**<br />
 <br />- **authentication/login_script.php** – skrypt, który umożliwia zalogowanie się do systemu<br />
          Gdy dane zostaną podane niepoprawne dane do logowania to wyświetlany jest JavaScript'owy alert.<br />
