@@ -1,6 +1,4 @@
 # Projekt PHP
-Projekt na zaliczenie przedmiotu: **Interaktywne serwisy internetowe**<br />
-Grupa: **S22-32**<br />
 Autorzy: [Karolina Lewińska](https://github.com/KarolinaLewinska), [Natalia Skórowska](https://github.com/NataliaSkorowska), [Mateusz Sałata](https://github.com/mateuszsalata1108)<br />
 **Cel projektu:** Stworzenie systemu pozwalającego na dodawanie, edycję oraz usuwanie danych osobowych pracowników fikcyjnej firmy.<br />
 Język: **PHP**<br />
