@@ -1,7 +1,7 @@
 # Projekt PHP
-Autorzy: [Karolina Lewińska](https://github.com/KarolinaLewinska), [Natalia Skórowska](https://github.com/NataliaSkorowska), [Mateusz Sałata](https://github.com/mateuszsalata1108)<br />
+**Autorzy:** [Karolina Lewińska](https://github.com/KarolinaLewinska), [Natalia Skórowska](https://github.com/NataliaSkorowska), [Mateusz Sałata](https://github.com/mateuszsalata1108)<br />
 **Cel projektu:** Stworzenie systemu pozwalającego na dodawanie, edycję oraz usuwanie danych osobowych pracowników fikcyjnej firmy.<br />
-Język: **PHP**<br />
+**Język:** PHP<br />
 **Struktura projektu:**<br />
 - **index.php** – strona główna (przed zalogowaniem, i po wylogowaniu)<br />
 <br />![indexView](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/indexPageView.PNG)<br />
