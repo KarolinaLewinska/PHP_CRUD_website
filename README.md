@@ -2,7 +2,7 @@
 
 - **index.php**<br />
 <br />![indexView](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/indexPageView.PNG)<br />
-<br />- **employees.php** <br /
+<br />- **employees.php** <br />
 <br />![employeesView](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/listView.PNG)<br />
 <br />- **add.php** 
 <br />![addView](https://github.com/KarolinaLewinska/PHP_Project/blob/main/ReadmeIMG/createView.PNG)<br />
