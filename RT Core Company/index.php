@@ -70,7 +70,7 @@
         <div>
             <footer class="page-footer  py-2 text-black-50" style="position:fixed; left:0; bottom:0; width: 100%; background-color:#B5BEC6">
                 <div class="container text-center">
-                    <p class="font-weight-bold">Copyright &copy; RT Core Company 2021 All Rights Reserved</p>
+                    <p class="font-weight-bold mt-2">Copyright &copy; RT Core Company 2021 All Rights Reserved</p>
                 </div>
             </footer>
         </div>

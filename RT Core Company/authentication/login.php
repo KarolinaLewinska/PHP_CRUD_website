@@ -4,27 +4,29 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="/css/authentication.css" rel="stylesheet">
-      <title>Logowanie</title>
+      <title>Zaloguj się</title>
    </head>
    <body>
-      <div>
+      <div class="row">
          <a href="/index.php">
-            <img src="/images/homepage.png" id="home">
+            <img src="/images/homepage.png" alt="powrót" id="home">
          </a>
       </div>
       <div class="panel">
-         <h2>ZALOGUJ SIĘ </h2><br>
+         <h2>Panel logowania</h2>
          <div id="form">
            <div>
-             <img src="/images/userIcon.png" id="icon" alt="UserIcon"/>
+               <img src="/images/userIcon.png" id="icon" alt="UserIcon"/>
            </div>
-           <form action = "login_script.php" method ="POST" >
+           <form action = "login_script.php" method ="POST">
               <div>
-                <input type="username" id="username" name="username" placeholder="Nazwa użytkownika">
+                  <input type="username" id="username" name="username" placeholder="Nazwa użytkownika">
               </div>
               <div>
-                  <input type="password" id="password"  name="password" placeholder="Hasło" ><br/>
-                  <input type="submit" value="Zaloguj się"/>
+                  <input type="password" id="password" name="password" placeholder="Hasło">
+               </div>
+               <div>
+                  <input type="submit" id="submit" value="Zaloguj się"/>
                </div>
            </form>
          </div>	
