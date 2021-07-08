@@ -86,9 +86,27 @@ input[type=text]:placeholder {
 h2 {
   margin-bottom: 40px;
 }
+h4 {
+  text-align: center;
+  font-size: larger;
+}
 #submit {
   margin-top:20px;
+  background-color: #778899;
+  
 }
 #password {
   margin-top:10px;
+}
+p {
+  text-align: center;
+  font-size: 18px;
+}
+#registerIcon {
+  width:60px;
+  height: 60px;
+  text-align: center;
+}
+#regLink {
+  text-align: center;
 }

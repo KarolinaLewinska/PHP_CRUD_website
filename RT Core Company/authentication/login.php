@@ -31,6 +31,13 @@
            </form>
          </div>	
       </div>
+      <div>
+         <h4>Nie masz konta?</h4>
+         <p>Przejdź do panelu rejestracyjnego:</p>
+      </div>
+      <div id="regLink">
+         <a href="register.php"><img src="/images/register.png" alt="register" id="registerIcon"></a>
+      </div>
    </body>
 </html>
 
