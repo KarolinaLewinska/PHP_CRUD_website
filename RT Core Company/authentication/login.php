@@ -18,7 +18,7 @@
            <div>
                <img src="/images/userIcon.png" id="icon" alt="UserIcon"/>
            </div>
-           <form action = "login_script.php" method ="POST">
+           <form action="login_script.php" method="POST">
               <div>
                   <input type="username" id="username" name="username" placeholder="Nazwa użytkownika">
               </div>
@@ -35,8 +35,8 @@
          <h4>Nie masz konta?</h4>
          <p>Przejdź do panelu rejestracyjnego:</p>
       </div>
-      <div id="regLink">
-         <a href="register.php"><img src="/images/register.png" alt="register" id="registerIcon"></a>
+      <div id="authLink">
+         <a href="register.php"><img src="/images/register.png" alt="register" id="authIcon"></a>
       </div>
    </body>
 </html>

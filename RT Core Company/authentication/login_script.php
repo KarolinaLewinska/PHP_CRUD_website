@@ -9,8 +9,8 @@
     require_once __DIR__.'\..\db\dbConnection.php';
     $connection = @new mysqli($servername, $username, $password, $dbname);
      
-    if ($connection -> connect_error != 0) {
-        echo "Error: ".$connection -> connect_error;
+    if ($connection->connect_error != 0) {
+        echo "Error: ".$connection->connect_error;
     }
     else {
         $userName = $_POST['username'];
@@ -18,16 +18,16 @@
          
         $userName = htmlentities($userName, ENT_QUOTES, "UTF-8");
      
-        if ($result = @$connection -> query(sprintf("SELECT * FROM users WHERE username ='%s'",
+        if ($result = @$connection -> query(sprintf("SELECT * FROM users WHERE username = '%s'",
             mysqli_real_escape_string($connection, $userName)))) {
             
-            $users_number = $result -> num_rows;
+            $users_number = $result->num_rows;
             if ($users_number > 0) {
-                $row = $result -> fetch_assoc();
+                $row = $result->fetch_assoc();
 
                 if (password_verify($password, $row['password'])) {
                     $_SESSION['logged_in'] = true;
-                    $_SESSION['username']=$row['username'];
+                    $_SESSION['username'] = $row['username'];
                     $_SESSION['password'] = $row['password'];
                     $result->free_result();
                     header('Location: /employees.php');

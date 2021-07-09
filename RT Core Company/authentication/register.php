@@ -7,13 +7,13 @@
 
       if (!preg_match('/^[a-z\d_]{3,31}$/i', $userName)) {
          $successfull = false;
-         $_SESSION['error_username'] ='Nazwa użytkownika musi zawierać od 3 do 30 znaków, </br>
+         $_SESSION['error_username'] = 'Nazwa użytkownika musi zawierać od 3 do 30 znaków, </br>
          może składać się tylko z liter i cyfr </br>
          (bez polskich znaków)';
       }
    
       $email = $_POST['email'];
-      $emailS= filter_var($email, FILTER_SANITIZE_EMAIL);
+      $emailS = filter_var($email, FILTER_SANITIZE_EMAIL);
 
       if ((filter_var($emailS, FILTER_VALIDATE_EMAIL) == false) || ($emailS != $email)) {
          $successfull = false;
@@ -21,7 +21,7 @@
       }
       
       $password_1 = $_POST['password1'];
-      $password_2=$_POST['password2'];
+      $password_2 = $_POST['password2'];
 
       if (!preg_match('/^(?=.*[!@#$%^&*-_])(?=.*[0-9])(?=.*[A-Z]).{8,}$/', $password_1)) {
          $successfull = false;
@@ -31,7 +31,7 @@
 
       if ($password_1 != $password_2) {
          $successfull = false;
-         $_SESSION['error_password_2'] = "Hasła nie są identyczne";
+         $_SESSION['error_password_2'] = "Podane hasła nie są identyczne";
       }
    
       $password_hash = password_hash($password_1, PASSWORD_DEFAULT);
@@ -49,26 +49,26 @@
       
       try {
          $connection = new mysqli($servername,$username,$password,$dbname);
-         if ($connection -> connect_error != 0) {
+         if ($connection->connect_error != 0) {
             throw new Exception(mysqli_connect_error()); 
          }
          else {
-            $result = $connection -> query("SELECT id from users where email = '$email'");
+            $result = $connection->query("SELECT id from users where email = '$email'");
             if(!$result) 
-               throw new Exception($connection -> error);
+               throw new Exception($connection->error);
 
-            $email_number = $result -> num_rows;
+            $email_number = $result->num_rows;
 
             if ($email_number > 0) {
                $successfull = false;
                $_SESSION['error_email'] = 'Podany adres email już istnieje';
             }
 
-            $result = $connection -> query("SELECT id from users where username = '$userName'");
+            $result = $connection->query("SELECT id from users where username = '$userName'");
             if (!$result) 
-               throw new Exception($connection -> error);
+               throw new Exception($connection->error);
 
-            $username_number = $result -> num_rows;
+            $username_number = $result->num_rows;
 
             if ($username_number > 0) {
                $successfull = false;
@@ -76,9 +76,9 @@
             }
 
             if ($successfull == true) {
-               if($connection -> query("INSERT INTO users (username, password, email) VALUES ('$userName','$password_hash','$email')")){
+               if($connection->query("INSERT INTO users (username, password, email) VALUES ('$userName','$password_hash','$email')")) {
                   $_SESSION['successful_registration'] = true;
-                  header('Location: welcome.php');
+                  header('Location: registrationConfirmed.php');
                }
                else {
                   echo "Błąd" . ($connection->connect_error);
@@ -90,7 +90,6 @@
       catch(Exception $e) {
          echo '<span style="color:red;">
             Błąd serwera! Przepraszamy za niedogodności i prosimy o rejestrację w późniejszym terminie!</span>';
-         echo '<br/>Informacja developerska: '.$e;
       }
    }
 ?>
@@ -109,7 +108,7 @@
          </a>
       </div>
       <div class="panel">
-         <h2>Panel rejestracyjny</h2><br>
+         <h2>Panel rejestracyjny</h2>
          <div id="form">
             <div>
                <img src="/images/userIcon.png" id="icon" alt="UserIcon"/>
@@ -169,6 +168,13 @@
                <input id="submit" name ="submit" type="submit" value="Zarejestruj się">
            </form>
          </div>
+      </div>
+      <div>
+         <h4>Posiadasz już konto?</h4>
+         <p>Przejdź do panelu logowania:</p>
+      </div>
+      <div id="authLink">
+         <a href="login.php"><img src="/images/login.png" alt="login" id="authIcon"></a>
       </div>
    </body>
 </html>
