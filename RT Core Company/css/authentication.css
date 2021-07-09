@@ -34,7 +34,7 @@ body {
   text-align: center;
 }
 input[type=submit] {
-  background-color: #585858;
+  background-color: #778899;
   border: none;
   color: white;
   padding: 15px 80px;
@@ -50,7 +50,9 @@ input[type=submit] {
   margin: 5px 20px 40px 20px;
 }
 input[type=submit]:hover {
-  background-color: grey;
+  background-color: #778899;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  
 }
 input[name=email], input[type=password], input[name=username] {
   background-color: #f6f6f6;
@@ -67,7 +69,8 @@ input[name=email], input[type=password], input[name=username] {
   border-radius: 5px 5px 5px 5px;
 }
 input[type=text]:placeholder {
-  color: grey;
+  color: #778899;
+
 }
 #icon {
   width: 30%;
@@ -91,9 +94,7 @@ h4 {
   font-size: larger;
 }
 #submit {
-  margin-top:20px;
-  background-color: #778899;
-  
+  margin-top:20px; 
 }
 #password {
   margin-top:10px;

@@ -26,7 +26,7 @@
                   <input type="password" id="password" name="password" placeholder="Hasło">
                </div>
                <div>
-                  <input type="submit" id="submit" value="Zaloguj się"/>
+                  <input class="button" type="submit" id="submit" value="Zaloguj się"/>
                </div>
            </form>
          </div>	

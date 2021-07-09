@@ -100,8 +100,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="/css/authentication.css" rel="stylesheet">
-      <script src='https://www.google.com/recaptcha/api.js' async defer></script>
-      <title>Rejestracja</title>
+      <title>Panel rejestracyjny</title>
    </head>
    <body>
       <div>
@@ -110,73 +109,66 @@
          </a>
       </div>
       <div class="panel">
-         <h2>STWÓRZ KONTO</h2><br>
+         <h2>Panel rejestracyjny</h2><br>
          <div id="form">
-           <div>
-             <img src="/images/userIcon.png" id="icon" alt="UserIcon"/>
+            <div>
+               <img src="/images/userIcon.png" id="icon" alt="UserIcon"/>
            </div>
-           <form method = "POST" >
-           <div>
-                <input type="text" id="username" name="username" placeholder="Nazwa użytkownika"
-                value="<?php
-            if (isset($_SESSION['fr_username'])){
-                echo $_SESSION['fr_username'];
-                unset($_SESSION['fr_username']);
-            }?>">
-              </div>
-              <?php
-              if (isset($_SESSION['error_username'])){
-                 echo '<div class="error">'.$_SESSION['error_username'].'</div>';
-                 unset($_SESSION['error_username']);
-              }
-              ?>
-              <div>
-                <input type="text" id="email" name="email" placeholder="Adres email"value="<?php
-            if (isset($_SESSION['fr_email'])){
-                echo $_SESSION['fr_email'];
-                unset($_SESSION['fr_email']);
-            }?>">
-              </div>
-              <?php
-              if (isset($_SESSION['error_email']))
-              {
-                 echo '<div class="error">'.$_SESSION['error_email'].'</div>';
-                 unset($_SESSION['error_email']);
-              }
-              ?>
-              <div>
-              <input type="password" id="password1"  name="password1" placeholder="Hasło"
-                value="<?php
-            if (isset($_SESSION['fr_haslo1']))
-            {
-                echo $_SESSION['fr_haslo1'];
-                unset($_SESSION['fr_haslo1']);
-            }?>">
-              </div>
-              <?php
-              if (isset($_SESSION['error_password_1'])){
-                 echo '<div class="error">'.$_SESSION['error_password_1'].'</div>';
-                 unset($_SESSION['error_password_1']);
-              }
-              ?>
-              <div>
-                <input type="password" id="password2"  name="password2" placeholder="Potwierdź hasło"
-                value="<?php
-            if (isset($_SESSION['fr_haslo2'])){
-                echo $_SESSION['fr_haslo2'];
-                unset($_SESSION['fr_haslo2']);
-            }?>">
-              </div>
-              <?php
-              if (isset($_SESSION['error_password_2'])){
-                 echo '<div class="error">'.$_SESSION['error_password_2'].'</div>';
-                 unset($_SESSION['error_password_2']);
-              }
-              ?>
-              </br>
-             <input name ="submit" type="submit" value="Zarejestruj się">
+           <form method ="POST">
+               <div>
+                  <input type="text" id="username" name="username" placeholder="Nazwa użytkownika" value="<?php
+                     if (isset($_SESSION['fr_username'])) {
+                        echo $_SESSION['fr_username'];
+                        unset($_SESSION['fr_username']);
+                     }?>">
+               </div>
+               <?php
+                  if (isset($_SESSION['error_username'])) {
+                     echo '<div class="error">'.$_SESSION['error_username'].'</div>';
+                     unset($_SESSION['error_username']);
+                  }
+               ?>
+               <div>
+                  <input type="text" id="email" name="email" placeholder="Adres email" value="<?php
+                     if (isset($_SESSION['fr_email'])) {
+                        echo $_SESSION['fr_email'];
+                        unset($_SESSION['fr_email']);
+                     }
+                  ?>">
+               </div>
+               <?php
+               if (isset($_SESSION['error_email'])) {
+                     echo '<div class="error">'.$_SESSION['error_email'].'</div>';
+                     unset($_SESSION['error_email']);
+                  }
+               ?>
+               <div>
+                  <input type="password" id="password1"  name="password1" placeholder="Hasło" value="<?php
+                     if (isset($_SESSION['fr_haslo1'])) {
+                        echo $_SESSION['fr_haslo1'];
+                        unset($_SESSION['fr_haslo1']);
+                     }?>">
+               </div>
+               <?php
+                  if (isset($_SESSION['error_password_1'])) {
+                     echo '<div class="error">'.$_SESSION['error_password_1'].'</div>';
+                     unset($_SESSION['error_password_1']);
+                  }?>
+               <div>
+                  <input type="password" id="password2"  name="password2" placeholder="Potwierdź hasło" value="<?php
+                     if (isset($_SESSION['fr_haslo2'])){
+                        echo $_SESSION['fr_haslo2'];
+                        unset($_SESSION['fr_haslo2']);
+                     }?>">
+               </div>
+               <?php
+               if (isset($_SESSION['error_password_2'])){
+                  echo '<div class="error">'.$_SESSION['error_password_2'].'</div>';
+                  unset($_SESSION['error_password_2']);
+               }?>
+               <input id="submit" name ="submit" type="submit" value="Zarejestruj się">
            </form>
-          </div>
+         </div>
       </div>
    </body>
 </html>
