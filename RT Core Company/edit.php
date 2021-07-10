@@ -71,7 +71,7 @@
     <div class="mx-auto" style="width: 50px;">
       <img src="images/editUser.png" alt="addUser" style="width: 60px;">
     </div>
-      <div style="left: 50%; top: 68%; position: absolute; transform: translate(-50%, -50%);">
+      <div style="left: 50%; top: 69%; position: absolute; transform: translate(-50%, -50%);">
         <form class="form-horizontal" action="db/editData.php" method="POST">
           <div class="form-group">
             <label class="control-label" for="id">*Identyfikator pracownika</label>

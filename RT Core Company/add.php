@@ -75,7 +75,7 @@
         <form class="form-horizontal" action="db/addData.php" method="POST">
           <div class="form-group">
             <label class="control-label" for="name">*Imię/Imiona</label>
-            <div style="width:450px;">
+            <div style="width: 450px;">
               <input type="text" class="form-control" name="name"
               required pattern="([A-ZŻŹĆĄŚĘŁÓŃ]{1}[a-zżźćńółęąś]+ ?[A-ZŻŹĆĄŚĘŁÓŃ]?[a-zżźćńółęąś]*)"
               title="Imię musi zaczynać się dużą literą i posiadać minimum dwa znaki">
