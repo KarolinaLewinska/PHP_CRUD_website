@@ -132,8 +132,7 @@
                      if (isset($_SESSION['fr_email'])) {
                         echo $_SESSION['fr_email'];
                         unset($_SESSION['fr_email']);
-                     }
-                  ?>">
+                     }?>">
                </div>
                <?php
                if (isset($_SESSION['error_email'])) {
@@ -152,7 +151,8 @@
                   if (isset($_SESSION['error_password_1'])) {
                      echo '<div class="error">'.$_SESSION['error_password_1'].'</div>';
                      unset($_SESSION['error_password_1']);
-                  }?>
+                  }
+               ?>
                <div>
                   <input type="password" id="password2"  name="password2" placeholder="Potwierdź hasło" value="<?php
                      if (isset($_SESSION['fr_haslo2'])){
@@ -164,7 +164,8 @@
                if (isset($_SESSION['error_password_2'])){
                   echo '<div class="error">'.$_SESSION['error_password_2'].'</div>';
                   unset($_SESSION['error_password_2']);
-               }?>
+               }
+               ?>
                <input id="submit" name ="submit" type="submit" value="Zarejestruj się">
            </form>
          </div>

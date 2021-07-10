@@ -77,7 +77,6 @@ input[name=email], input[type=password], input[name=username] {
 
 input[type=text]:placeholder {
   color: #778899;
-
 }
 
 #icon {

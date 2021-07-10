@@ -3,6 +3,7 @@
 
     $allEmployees = "SELECT * FROM employees";
     $result = $connection->query($allEmployees);
+    
     if ($result->num_rows > 0) {
         while($row = $result->fetch_assoc()) {
             echo "<tr>";
@@ -17,6 +18,7 @@
     } else {
         die("Dane nie istnieją" . $connection->connect_error);
     }
+    
     $result ->close();
     $connection->close();
 ?>

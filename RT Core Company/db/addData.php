@@ -12,6 +12,7 @@
           $addData = "INSERT INTO employees (names, surname, dateOfBirth, email, phoneNumber, department)
           VALUES ('$name', '$surname', '$birthDate', '$email', '$phoneNumber', '$department')";
      }
+     
      if ($connection->query($addData) === TRUE) {
           echo '<script language="javascript">alert("Pomyślnie dodano dane do bazy") </script>';
           echo '<script language="javascript">window.location = "/add.php"</script>';

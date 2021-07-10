@@ -6,6 +6,7 @@
 		header('Location: authentication/login.php');
 		exit();
     }
+
     ini_set("session.gc_maxlifetime", 60 * 60 * 12);
 ?>
 <!DOCTYPE html>
@@ -82,13 +83,13 @@
                 </div>  
                 <div class="form-group">  
                     <div>
-                        <button style="width: 450px;" type="submit" class="btn btn-secondary" value ="delete" name="delete" >USUŃ</button>
+                        <button style="width: 450px;" type="submit" class="btn btn-secondary" value="delete" name="delete" >USUŃ</button>
                     </div>
                 </div>
             </form>
         </div>
         <div>
-            <footer class="page-footer  py-2 text-black-50" style="position:fixed; left:0; bottom:0; width: 100%; background-color:#B5BEC6">
+            <footer class="page-footer  py-2 text-black-50" style="position: fixed; left: 0; bottom: 0; width: 100%; background-color: #B5BEC6">
                 <div class="container text-center">
                     <p class="font-weight-bold mt-2">Copyright &copy; RT Core Company 2021 All Rights Reserved</p>
                 </div>
