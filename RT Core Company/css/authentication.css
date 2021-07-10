@@ -1,20 +1,24 @@
 html {
   background-color:#DCDCDC;
 }
+
 a:link, a:visited {
   padding: 20px;
   margin: 10px;
   list-style-type: none;
 }
+
 #back {
   list-style-type: none;
   padding: 20px;
   margin: 10px;
 }
+
 body {
   font-family: sans-serif;
   height: 100vh;
 }
+
 .panel {
   display: flex;
   align-items: center;
@@ -22,6 +26,7 @@ body {
   justify-content: center;
   width: 100%;
 }
+
 #form {
   border-radius: 10px 10px 10px 10px;
   background: #fff;
@@ -32,6 +37,7 @@ body {
   box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
   text-align: center;
 }
+
 input[type=submit] {
   background-color: #778899;
   border: none;
@@ -48,11 +54,12 @@ input[type=submit] {
   border-radius: 5px 5px 5px 5px;
   margin: 5px 20px 40px 20px;
 }
+
 input[type=submit]:hover {
   background-color: #778899;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-  
 }
+
 input[name=email], input[type=password], input[name=username] {
   background-color: #f6f6f6;
   border: black;
@@ -67,47 +74,58 @@ input[name=email], input[type=password], input[name=username] {
   border: 2px solid #f6f6f6;
   border-radius: 5px 5px 5px 5px;
 }
+
 input[type=text]:placeholder {
   color: #778899;
 
 }
+
 #icon {
   width: 30%;
   margin-bottom: 20px; 
 }
+
 #home {
   width: 60px;
   margin-top: 10px;
   margin-left: 20px;
 }
+
 .error {
   color:red;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 h2 {
   margin-bottom: 40px;
 }
+
 h4 {
   text-align: center;
   font-size: larger;
   color:#CD5C5C;
 }
+
 #submit {
-  margin-top:20px; 
+  margin-top: 20px; 
 }
+
 #password {
-  margin-top:10px;
+  margin-top: 10px;
 }
+
 p {
   text-align: center;
   font-size: 18px;
 }
+
 #authIcon {
-  width:60px;
+  width: 60px;
   height: 60px;
   text-align: center;
 }
+
 #authLink {
   text-align: center;
 }

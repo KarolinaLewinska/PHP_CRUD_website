@@ -18,7 +18,7 @@
          
         $userName = htmlentities($userName, ENT_QUOTES, "UTF-8");
      
-        if ($result = @$connection -> query(sprintf("SELECT * FROM users WHERE username = '%s'",
+        if ($result = @$connection->query(sprintf("SELECT * FROM users WHERE username = '%s'",
             mysqli_real_escape_string($connection, $userName)))) {
             
             $users_number = $result->num_rows;
@@ -33,21 +33,13 @@
                     header('Location: /employees.php');
                 }
                 else {
-                    echo '<script language="javascript">
-                        alert("Nieprawidłowy login lub hasło")
-                        </script>';
-                    echo '<script language="javascript">
-                        window.location = "login.php"
-                        </script>';  
+                    echo '<script language="javascript">alert("Nieprawidłowy login lub hasło")</script>';
+                    echo '<script language="javascript">window.location = "login.php"</script>';  
                 }         
             } 
             else {
-                echo '<script language="javascript">
-                    alert("Nieprawidłowy login lub hasło")
-                    </script>';
-                echo '<script language="javascript">
-                    window.location = "login.php"
-                    </script>';
+                echo '<script language="javascript">alert("Nieprawidłowy login lub hasło")</script>';
+                echo '<script language="javascript">window.location = "login.php"</script>';
             }
         }
         $connection->close();

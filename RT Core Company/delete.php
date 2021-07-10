@@ -19,37 +19,50 @@
    </head>
    <body>
        <div>
-            <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
-                <a class="navbar-brand" >
-                    <img src="images/logo.jpg" alt="Logo" style="width:60px;">
+            <nav class="navbar navbar-expand-xl bg-dark navbar-dark fixed-top">
+                <a class="navbar-brand">
+                    <div class="row">
+                        <div class="col-sm">
+                            <img src="images/logoNoBackground.png" alt="Logo" style="width:80px;">
+                        </div>
+                        <div class="col-sm">
+                            <h4 style="padding-top:6px;">RT Core Company</h4>
+                        </div>
+                    </div>
                 </a>
-                <ul class="navbar-nav pt-0">
+                <ul class="navbar-nav pt-0" style="margin-left:20px; margin-right:10px;">
                     <li class="nav-item">
                         <a class="nav-link" href="employees.php">Lista pracowników</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav pt-0">
+                <ul class="navbar-nav pt-0" style="margin-right:10px;">
                     <li class="nav-item">
-                        <a class="nav-link" href="add.php">Dodaj</a>
+                        <a class="nav-link" href="add.php">Dodaj dane</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav pt-0">
+                <ul class="navbar-nav pt-0" style="margin-right:10px;">
                     <li class="nav-item">
-                        <a class="nav-link" href="edit.php">Edytuj</a>
+                        <a class="nav-link" href="edit.php">Edytuj dane</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav pt-0">
+                <ul class="navbar-nav pt-0" style="margin-right:10px;">
                     <li class="nav-item">
-                        <a class="nav-link" href="delete.php">Usuń</a>
+                        <a class="nav-link" href="delete.php">Usuń dane</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav ml-auto">
-                    <a>
-                        <img src="images/logout2.png" alt="logout" style="width:40px;">
-                    </a>
-                    <li class="nav-item">
-                        <a class="nav-link" href="authentication/logout.php">Wyloguj się</a>
-                    </li>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-2">
+                                <li class="nav-item">
+                                    <img src="images/logout2.png" alt="logout" style="width:40px;">
+                                </li>
+                            </div>
+                            <div class="col-9">
+                                <a class="nav-link" href="authentication/logout.php" style="margin-right:70px;">Wyloguj się</a>
+                            </div>
+                        </div>
+                    </div>
                 </ul>
             </nav>
        </div>
@@ -81,9 +94,9 @@
             </form>
         </div>
         <div>
-            <footer class="page-footer py-2 text-black-50" style="position: fixed; left: 0; bottom: 0; width: 100%; background-color: #B5BEC6;">
+            <footer class="page-footer  py-2 text-black-50" style="position:fixed; left:0; bottom:0; width: 100%; background-color:#B5BEC6">
                 <div class="container text-center">
-                    <p>Copyright &copy; RT Core Company 2021 </p>
+                    <p class="font-weight-bold mt-2">Copyright &copy; RT Core Company 2021 All Rights Reserved</p>
                 </div>
             </footer>
         </div> 

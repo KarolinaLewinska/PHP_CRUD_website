@@ -14,8 +14,9 @@
             echo "<td>". $row["phoneNumber"]. "</td>";
             echo "<td>". $row["department"]. "</td>";
         }
-    } else 
+    } else {
         die("Dane nie istnieją" . $connection->connect_error);
+    }
     $result ->close();
     $connection->close();
 ?>

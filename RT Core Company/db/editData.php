@@ -1,7 +1,7 @@
 <?php
     include_once "dbConnection.php";
 
-    if(isset($_POST["edytuj"])) {
+    if (isset($_POST["edytuj"])) {
         $id = $_POST["id"];
         $name = $_POST["name"];
         $surname = $_POST["surname"];
@@ -11,14 +11,11 @@
         $department = $_POST["department"];
 
         $updateData = "UPDATE employees SET names = '$name', surname = '$surname', dateOfBirth = '$birthDate', 
-        email = '$email', phoneNumber = '$phoneNumber', department = '$department', timestamp=CURRENT_TIMESTAMP WHERE id='$id'";
+        email = '$email', phoneNumber = '$phoneNumber', department = '$department', timestamp = CURRENT_TIMESTAMP WHERE id = '$id'";
     }
     if ($connection->query($updateData) === TRUE) {
-        echo '<script language="javascript">
-        alert("Dane zostały zaktualizowane.") </script>';
-        echo '<script language="javascript"> 
-        window.location = "/edit.php"
-        </script>';
+        echo '<script language="javascript">alert("Pomyślnie zaktualizowano dane") </script>';
+        echo '<script language="javascript">window.location = "/edit.php"</script>';
     }
     else
         die("Błąd połączenia z bazą " . $connection->connect_error);   
