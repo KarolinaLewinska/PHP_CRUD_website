@@ -42,7 +42,7 @@
                 </ul>
                 <ul class="navbar-nav pt-0" style="margin-right: 10px;">
                     <li class="nav-item">
-                        <a class="nav-link" href="edit.php">Edytuj dane</a>
+                        <a class="nav-link" href="edit.php">Zaktualizuj dane</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav pt-0" style="margin-right: 10px;">

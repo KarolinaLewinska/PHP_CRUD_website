@@ -1,7 +1,7 @@
 <?php
     include_once "dbConnection.php";
 
-    if (isset($_POST["edytuj"])) {
+    if (isset($_POST["edit"])) {
         $id = $_POST["id"];
         $name = $_POST["name"];
         $surname = $_POST["surname"];

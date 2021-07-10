@@ -1,7 +1,7 @@
 <?php
      include_once "dbConnection.php";
 
-     if (isset($_POST["dodaj"])) {  
+     if (isset($_POST["add"])) {  
           $name = $_POST["name"];
           $surname = $_POST["surname"];
           $birthDate = $_POST["birthDate"];

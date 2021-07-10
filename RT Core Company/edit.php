@@ -1,5 +1,6 @@
 <?php
   session_start();
+  include "security/ipSecurity.php";
 
 	if (!isset($_SESSION['logged_in'])) {
 	  header('Location: authentication/login.php');
@@ -7,16 +8,13 @@
   }
   ini_set("session.gc_maxlifetime", 60 * 60 * 12);
 ?>
-<?php
-    include "security/ipSecurity.php";
-?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <title>Dodaj dane</title>
+    <title>Edycja danych</title>
     </head>
   <body>
     <div>
@@ -43,7 +41,7 @@
         </ul>
         <ul class="navbar-nav pt-0" style="margin-right: 10px;">
             <li class="nav-item">
-                <a class="nav-link" href="edit.php">Edytuj dane</a>
+                <a class="nav-link" href="edit.php">Zaktualizuj dane</a>
             </li>
         </ul>
         <ul class="navbar-nav pt-0" style="margin-right: 10px;">
@@ -68,23 +66,31 @@
       </nav>
     </div>
     <div>
-      <h2 class="text-center" style="margin-top: 80px; margin-bottom: 20px;">Dodaj nowe dane pracownicze</h2>
+      <h2 class="text-center" style="margin-top: 80px; margin-bottom: 20px;">Zaktualizuj dane pracownicze</h2>
     </div>
     <div class="mx-auto" style="width: 50px;">
-      <img src="images/addUser.png" alt="addUser" style="width: 60px;">
+      <img src="images/editUser.png" alt="addUser" style="width: 60px;">
     </div>
-      <div style="left: 50%; top: 60%; position: absolute; transform: translate(-50%, -50%);">
-        <form class="form-horizontal" action="db/addData.php" method="POST">
+      <div style="left: 50%; top: 68%; position: absolute; transform: translate(-50%, -50%);">
+        <form class="form-horizontal" action="db/editData.php" method="POST">
           <div class="form-group">
-            <label class="control-label" for="name">Imię/Imiona*</label>
-            <div style="width:450px;">
+            <label class="control-label" for="id">*Identyfikator pracownika</label>
+            <div style="width: 450px;">
+              <input type="text" class="form-control " name="id"
+              required pattern="(\d+)"
+              title="Identyfikator może składać się tylko z cyfr">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label" for="name">*Imię/Imiona</label>
+            <div style="width: 450px;">
               <input type="text" class="form-control" name="name"
               required pattern="([A-ZŻŹĆĄŚĘŁÓŃ]{1}[a-zżźćńółęąś]+ ?[A-ZŻŹĆĄŚĘŁÓŃ]?[a-zżźćńółęąś]*)"
               title="Imię musi zaczynać się dużą literą i posiadać minimum dwa znaki">
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label" for="surname">Nazwisko*</label>
+            <label class="control-label" for="surname">*Nazwisko</label>
             <div style="width: 450px;">
               <input type="text" class="form-control" name="surname"
               required pattern="([A-ZŻŹĆĄŚĘŁÓŃ]{1}[a-zżźćńółęąś]+[ \-]?[A-ZŻŹĆĄŚĘŁÓŃa-zżźćńółęąś]?[a-zżźćńółęąś]*)"
@@ -92,14 +98,14 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label" for="birthDate">Data urodzenia*</label>
+            <label class="control-label" for="birthDate">*Data urodzenia</label>
             <div style="width: 450px;">
               <input type="date" class="form-control" name="birthDate"
               required min="1899-01-01" max="2003-12-31">
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label" for="email">Adres email*</label>
+            <label class="control-label" for="email">*Adres email</label>
             <div style="width: 450px;">
               <input type="text" class="form-control" name="email"
               required pattern="([a-z0-9!#$%&'\*\\\\+\\/=?^`{}|]{1}[a-z0-9!#$%&'\*\.\\\+\-\/=?^_`{}|]+@[a-z0-9.-]+\.[a-z]{2,4}$)"
@@ -107,7 +113,7 @@
             </div>
           </div>
           <div class="form-group">
-            <label class="control-label" for="number">Numer telefonu*</label>
+            <label class="control-label" for="number">*Numer telefonu</label>
             <div style="width: 450px;">
               <input type="text" class="form-control" name="number"
               required pattern="\d{9}"
@@ -115,7 +121,7 @@
             </div>
           </div>
           <div style="width: 450px; margin-bottom: 20px;">
-            <label for="department">Dział*</label>
+            <label for="department">*Dział</label>
             <select class="form-control" name="department">
               <option>Administracja</option>
               <option>Biuro Rachunkowe</option>
@@ -129,7 +135,7 @@
           </div>
           <div><p>*Pola wymagane</p></div>
           <div class="form-group mb-5">
-              <button style="width: 450px;" type="submit" class="btn btn-secondary" name="dodaj" value="dodaj">DODAJ</button>
+              <button style="width: 450px; margin-bottom:50px;" type="submit" class="btn btn-secondary" name="edit" value="edit">EDYTUJ</button>
           </div>
         </form>
       </div>
