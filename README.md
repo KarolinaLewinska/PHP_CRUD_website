@@ -1,5 +1,5 @@
 # PHP CRUD Project
-* CRUD operations on fictional employees data<br />
+Website of fictional company where you can manage fictional personal data.<br />
 - **index.php**<br />
 <br />![indexView](https://github.com/KarolinaLewinska/PHP_CRUD_website/blob/main/ReadmeIMG/index.PNG)<br />
 <br />- **employees.php**<br />
