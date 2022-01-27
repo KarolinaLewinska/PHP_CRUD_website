@@ -1,6 +1,7 @@
 # PHP CRUD Project
 The other co-authors: [Natalia Skórowska](https://github.com/NataliaSkorowska), [Mateusz Sałata](https://github.com/mateuszsalata1108).<br />
-Website of fictional company where you can manage fictional personal data of employees.<br />
+The website of fictional company where you can manage fictional personal data of employees.<br />
+
 ## Interfaces
 ### index.php
 <br />![indexView](https://github.com/KarolinaLewinska/PHP_CRUD_website/blob/main/ReadmeIMG/index.PNG)<br />
